@@ -3,7 +3,7 @@ from blackjack import *
 class GoFishHand:
     CARD_RANK = ["A", "2","3","4","5","6","7","8","9","10","J","Q","K"]
 
-    def __init__(self, player="", cards=[]):
+    def __init__(self, player_name="", cards=[]):
         # You need to keep track of two things in this class:
         #   1. the cards in this hand
         #   2. the rank of (4 of a kind, cards with the same values)  You can 
