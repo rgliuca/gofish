@@ -21,17 +21,19 @@ class GoFishHand:
     def add_cards(self, cards):
         # cards is a list
         # Just like in BJHand, add cards to this "hand" but with an additional
-        # function of checking if you have the full suit of a given rank
+        # function of checking if you have the full suit of a given rank.  If 
+        # four of a kind is found, remove these 4 cards from this “hand” and 
+        # add the rank value to the self._four_ofa_kinds list
         pass
 
     def get_score(self):
-        # returns the number of four a kind this hand has
+        # returns the number of four a kind in this "hand".  Can get this info 
+        # from self._four_ofa_kinds list
         pass
     
     def get_four_ofa_kind(self):
-        # returns a list of the 4 of a kind in this "hand", you can just return
-        # a list of the ranks of these four a kind
-        # you can use Card.get_value() for the rank value 
+        # Returns a list of four of a kind in this “hand”.  You can just return 
+        # the list self._four_ofa_kinds
         pass
     
     def print(self, col_size=5, show_all_cards=True):
