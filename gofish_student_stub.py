@@ -7,7 +7,8 @@ class GoFishHand:
         # You need to keep track of two things in this class:
         #   1. the cards in this hand
         #   2. the rank of (4 of a kind, cards with the same values)  You can 
-        #     compute the score from this.
+        #     compute the score from this.  Use a list to keep track of the ranks
+        #     You can use this member variable: self._four_ofa_kinds = []
         pass
     
     def remove_rank_cards(self, rank):
