@@ -36,6 +36,10 @@ class GoFishHand:
     def print(self, col_size=5, show_all_cards=True):
         # prints the cards in hand
         pass
+    
+    def get_num_cards(self):
+        # return the number of cards in "hand"
+        pass
                
 if __name__ == "__main__":
   cards = CardDeck()
