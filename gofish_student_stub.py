@@ -43,7 +43,35 @@ class GoFishHand:
     def get_num_cards(self):
         # return the number of cards in "hand"
         pass
-               
+    
+class GoFishHumanPlayer():
+    def __init__(self, name, cards):
+        pass
+    
+    def fish_from_players(self, other_players):
+        # get input from the user to pick its rank card and a computer player id
+        pass
+
+class GoFishComputerPlayer():
+    next_computer_player_id = 1
+    
+    def __init__(self, cards):
+        # This init method has the following functionalities: 
+        # 1. Create a “name” for the computer player.  This will require a class 
+        #    variable which is a player_id (valid id: 1, 2, 3 depending on the 
+        #    number of computer players).  Use the variable self._name  
+        #   Examples of a valid computer player name:
+        #   “Computer Player #1”, “Computer Player #2”, etc.
+        # 2. Create a “GoFishHand” object for the computer player and add the cards 
+        #  (list of poker Card types) to this hand.  Use self._hand
+        pass
+
+    def fish_from_players(self, other_players):
+        # randomly pick a player from other_players and randomly pick a rank value from 
+        # this computer player's hand and return the result as a tuple: 
+        # (player, rank value)
+        pass
+        
 if __name__ == "__main__":
   cards = CardDeck()
   cards.shuffle()
