@@ -65,6 +65,10 @@ class GoFishComputerPlayer():
         # 2. Create a “GoFishHand” object for the computer player and add the cards 
         #  (list of poker Card types) to this hand.  Use self._hand
         pass
+    
+    @property
+    def name(self):
+        return self._name
 
     def fish_from_players(self, other_players):
         # randomly pick a player from other_players and randomly pick a rank value from 
